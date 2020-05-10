@@ -1,0 +1,26 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Root.webapp.controller.view1"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="View1">
+				<subHeader>
+					<Toolbar>
+						<SearchField search="onSearch"></SearchField>
+					</Toolbar>
+				</subHeader>
+				<content>
+					<!--					<Button icon="sap-icon" text="Next" press="onNext"></Button>	-->
+					<List id="idListV1" mode="SingleSelectMaster" selectionChange="onItemPress" items="{/fruits}">
+						<items>
+							<ObjectListItem type="Navigation" title="{name}" intro="{type}" icon="{image}" number="{price}" numberUnit="{currency}">
+								<firstStatus>
+									<ObjectStatus state="Success" text="{status}"></ObjectStatus>
+								</firstStatus>
+							</ObjectListItem>
+						</items>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

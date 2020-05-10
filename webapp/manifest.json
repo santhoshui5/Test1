@@ -1,0 +1,115 @@
+{
+	"_version": "1.9.0",
+	"sap.app": {
+		"id": "Root",
+		"type": "application",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appescription}}",
+		"tags": {
+			"keywords": [
+				"{{fruits}}"
+			]
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"dependencies": {
+			"minUI5Version": "1.66.10",
+			"libs": {
+				"sap.ui.core": {
+					"minVersion": "1.66.10"
+				},
+				"sap.ui.layout": {
+					"minVersion": "1.66.10"
+				},
+				"sap.m": {
+					"minVersion": "1.66.10"
+				}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": false
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "CSS/myStyle.css",
+					"id": ""
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewPath": "Root.webapp.view",
+				"viewType": "XML",
+				"controlId": "Appid"
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "santhosh",
+					"target": [
+						"donald",
+						"trumph"
+					]
+				},
+				{
+					"pattern": "fruitDetail/{fid}",
+					"name": "tulasi",
+					"target": [
+						"donald",
+						"putin"
+				]
+				},
+				{
+					"pattern": "fruitDetail/{fid}/supplierDetail/{fid}",
+					"name": "sony",
+					"target": [
+						"donald",
+						"bahubali"
+					]
+				}
+
+			],
+			"targets": {
+				"donald": {
+					"viewName": "view1",
+					"controlAggregation": "masterPages",
+					"viewId": "idV1"
+				},
+				"trumph": {
+					"viewName": "view2",
+					"controlAggregation": "detailPages",
+					"viewId": "idV2"
+				},
+				"putin": {
+					"viewName": "view2",
+					"controlAggregation": "detailPages",
+					"viewId": "idV2"
+				},
+				"bahubali": {
+					"viewName": "view3",
+					"controlAggregation": "detailPages",
+					"viewId": "idV3"
+				}
+			}
+		},
+		"rootView": {
+			"viewName": "Root.webapp.view.SplitApp",
+			"id": "idApp1",
+			"type": "XML"
+		}
+	}
+}

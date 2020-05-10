@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<title>test</title>
+<script src="/resources/sap-ui-core.js"
+            id="sap-ui-bootstrap"
+            data-sap-ui-libs="sap.m"
+            data-sap-ui-theme="sap_bluecrystal"
+            data-sap-ui-resourceroots='{"Root":"./"}'>
+            </script>
+
+	<script>
+	/*	var oView = new sap.ui.view("idApp1",
+		{
+			type:sap.ui.core.mvc.ViewType.XML,
+			viewName:"Root.webapp.view.SplitApp"
+		});
+		oView.placeAt("myBtn");	*/
+		// index html can be only used for testing our component js
+		
+		var oCompContainer = new sap.ui.core.ComponentContainer({
+			name: "Root.webapp"
+		})
+		
+		oCompContainer.placeAt("myBtn");
+		
+	</script>
+</head>
+<body class="sapUiBody">
+	<div id="myBtn"></div>
+</body>
+</html>

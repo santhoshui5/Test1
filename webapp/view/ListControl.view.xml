@@ -1,0 +1,57 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Root.webapp.controller.ListControl"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="List Control Demo" showNavButton="true" navButtonPress="onBack">
+				<headerContent>
+					<Button icon="sap-icon://action" text="Home" press="onNext"></Button>
+				</headerContent>
+				<content>
+<!--					<List id = "myList" mode="SingleSelectLeft" >-->
+					<List id = "myList" mode="Delete" delete="onDelete">
+						<items>  <!--Default aggreagation-->
+							<DisplayListItem label="Apple"
+											 value="Best Antidiote">
+							</DisplayListItem>
+							<StandardListItem icon=""
+											  title="Banana"
+											  description="Best in energy levels">
+								
+							</StandardListItem>
+							<ObjectListItem title="Pineapple"
+											intro="Good for oxidation"
+											number="100"
+											numberUnit="pc.">
+								<firstStatus>
+									<ObjectStatus state="Success"
+												  text="Available">
+									</ObjectStatus>
+								</firstStatus>
+							</ObjectListItem>
+							<InputListItem>
+								<Text text="How many oranges do you want?"></Text>
+								<Input></Input>
+							</InputListItem>
+							
+							<CustomListItem>
+								<Text text="do you want in COD?"></Text>
+								<Switch></Switch>
+							</CustomListItem>
+							
+							<ActionListItem text="order now">
+								
+							</ActionListItem>
+							<FeedListItem icon=""
+					    	              timestamp="11th June 2019"
+							              text="Hey"
+							              sender="Donald Trump">
+							</FeedListItem>
+										  
+						</items>
+					</List>
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

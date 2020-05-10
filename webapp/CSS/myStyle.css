@@ -1,0 +1,11 @@
+.sapMBtn, .sapMBtnInner{
+	background:red;
+	border: 2px dashed yellow;
+}
+.sapMBtnContent{
+	background:red;
+}
+.sapMBtnContent: HOVER{
+	width: '20px';
+	height: '20px';
+}
