@@ -4,6 +4,8 @@ sap.ui.define(["sap/ui/core/UIComponent"],
 			metadata:{
 				"manifest":"json"
 			},
+			
+/*			Hello All, GIT test*/
 			init: function () {
 				//Initialize code like initialization of router
 				//Calling the base class methods
